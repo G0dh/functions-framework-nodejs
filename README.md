@@ -248,13 +248,13 @@ Learn how to use CloudEvents in this [guide](docs/cloudevents.md).
 The Functions Framework also supports an interface that declaritively defines your function signature.
 
 ```js
-import * as FunctionsFramework from '@google-cloud/functions-framework';
+const functions = require('@google-cloud/functions-framework');
 
-FunctionsFramework.http('hello', async (req, res) => {
+functions.http('hello', async (req, res) => {
   res.send('Hello, World!');
 });
 
-FunctionsFramework.cloudevent('ce', async (cloudevent) => {
+functions.cloudevent('ce', async (cloudevent) => {
   res.send('Hello, CloudEvent!');
 });
 ```
