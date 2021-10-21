@@ -243,6 +243,24 @@ To enable CloudEvents, set the signature type to `cloudevent`. By default, the H
 
 Learn how to use CloudEvents in this [guide](docs/cloudevents.md).
 
+## Declarative Functions
+
+The Functions Framework also supports an interface that declaritively defines your function signature.
+
+```js
+import * as FunctionsFramework from '@google-cloud/functions-framework';
+
+FunctionsFramework.http('hello', async (req, res) => {
+  res.send('Hello, World!');
+});
+
+FunctionsFramework.cloudevent('ce', async (cloudevent) => {
+  res.send('Hello, CloudEvent!');
+});
+```
+
+With declarative functions, you do not need to specify the function signature type (`--signature-type` / `FUNCTION_SIGNATURE_TYPE`).
+
 ## Advanced Docs
 
 More advanced guides and docs can be found in the [`docs/` folder](docs/).
