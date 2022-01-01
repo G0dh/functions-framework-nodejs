@@ -9,7 +9,7 @@
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.19.1",
     "express": "^4.16.4",
     "minimist": "^1.2.5",
     "on-finished": "^2.3.0",
