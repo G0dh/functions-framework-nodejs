@@ -11,7 +11,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "on-finished": "^2.3.0",
     "read-pkg-up": "^7.0.1",
     "semver": "^7.3.5"
