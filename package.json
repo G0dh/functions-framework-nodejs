@@ -9,8 +9,8 @@
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
     "minimist": "^1.2.5",
     "on-finished": "^2.3.0",
     "read-pkg-up": "^7.0.1",
